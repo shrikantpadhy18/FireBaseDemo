@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Login</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="./mystyle.css" />
+
+</head>
+<body>
+    <div id="login_div" class="main-div">
+            <h3>Firebase web login example</h3>
+            <input type="email" placeholder="Email..." id="email_field" />
+            <input type="password" placeholder="password..." id="password_field" />
+            <button onclick="login()">Login to Account</button>
+        </div>
+
+        <div id="user_div" class="loggedin-div">
+            <h3>Welcome User</h3>
+            <p id="user_para">Welcome to Firebase web login Example. you're currently logged in.</p>
+            <button onclick="Logout()">Logout</button>
+        </div>
+
+
+       <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="/__/firebase/7.15.1/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="/__/firebase/7.15.1/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="/__/firebase/7.15.1/firebase-auth.js"></script>
+  <script src="/__/firebase/7.15.1/firebase-firestore.js"></script>
+  <script src="/__/firebase/7.15.1/firebase.js"></script>
+
+
+
+
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB1jM_XEHyysREl0XXU-7-oq05rPe8DEig",
+    authDomain: "fir-a5e15.firebaseapp.com",
+    databaseURL: "https://fir-a5e15.firebaseio.com",
+    projectId: "fir-a5e15",
+    storageBucket: "fir-a5e15.appspot.com",
+    messagingSenderId: "587111019599",
+    appId: "1:587111019599:web:d8161e7adfdd6d8355663a"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+
+</body>
+</html>
